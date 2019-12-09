@@ -5,7 +5,6 @@
         name="username" (keyup)="searchProfile()">
     </div>
 </form>
-<h1>GitSearch-App</h1>
 
 <div *ngIf="profile">
   <div class="panel panel-default">
@@ -13,7 +12,7 @@
       <div class="row">
         <div class="col-md-4 text-center">
           <img
-            id="prof"
+            id="woke"
             src="{{ profile.avatar_url }}"
             class="img rounded-circle img-responsive"
             alt="profile Image"
@@ -43,12 +42,12 @@
         </div>
         <div class="col-md-2"></div>
         <div id="details" class="col-md-4 text-left">
-          <div class="infor">
+          <div class="collect">
             <p>
               <span class="lebel lebel-default"
                 >{{ profile.followers }} Followers</span
               ><br />
-              <span class="lebel lebel-prinmary">
+              <span class="lebel lebel-primary">
                 {{ profile.following }} Following</span
               ><br />
               <span class="lebel lebel-success"
@@ -72,7 +71,7 @@
           <div class="panel-heading">
             <h3 class="panel-title">Repos</h3>
           </div>
-          <div id="rep" class="panel-body" *ngFor="let repo of repos">
+          <div id="k" class="panel-body" *ngFor="let repo of repos">
             <p
               style="text-decoration:underline; font-size:20px;"
               class="clearfix"
