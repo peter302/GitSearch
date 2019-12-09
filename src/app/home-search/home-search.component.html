@@ -1,3 +1,9 @@
+<form action="" class="formsearch">
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="search here"[(ngModel)]="username"
+        name="username" (keyup)="searchProfile()">
+    </div>
+</form>
 <div *ngIf="profile">
     <div class="panel panel-default">
         <div class="panel-heading">
