@@ -16,6 +16,29 @@
                     <li class="list-group-item" *ngIf="profile.bio">{{profile.bio}}</li>
                 </ul>
             </div>
+            <div class="col-sm-4">
+                <div>
+                    <p>
+                       
+                        <span class="label label-default">{{profile.follwers}} followers</span>
+                        <span class="label label-success"> Following{{profile.follwings}}</span>
+                        <span class="label label-primary">{{profile.public_gists}} public gists</span>
+                        <span class="label label-default">{{profile.public_repos}} public repos</span>
+                    </p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Repos</h3>
+                        </div>
+                        <div class="panel-body" *ngFor="let repo of repos">
+                            <p>
+                                {{repo.name}} 
+                            </p>
+                            <p>{{repo.description}}</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
