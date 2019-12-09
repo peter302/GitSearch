@@ -6,10 +6,11 @@ import { SearchedService } from '../git-search/searched.service';
   styleUrls: ['./home-search.component.css']
 })
 export class HomeSearchComponent implements OnInit {
-
+      profile:any[]
   constructor(private searchservice:SearchedService) {
-    this.searchservice.showProfile().subscribe(profile=>{
+    this.searchservice.getprofileInfo().subscribe(profile=>{
       console.log(profile)
+      this.profile=profile
     })
    }
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {HttpClientModule} from '@angular/common/http'
-import "rxjs/add/operator/map";
+import {HttpClient,HttpHeaders} from '@angular/common/http'
+
 
 
 @Injectable({
@@ -10,16 +10,16 @@ export class SearchedService {
 private username:string
 private clientid:'5bc8503b88f0083c5559'
 private clientsecret:'d28bbc6426e9c7aa507f8a61d9905e6863480bf7'
-  constructor(private http:HttpClientModule) { 
+  constructor(private http:HttpClient) { 
     console.log('i am ready')
     this.username="kuria"
   }
 
-  showProfile(){
+  getprofileInfo(){
     
     return this.http.get("https://api.github.com/users/" + this.username + "?client_id=" +this.clientid + "&client_secret=" + 
-    this.clientsecret).map(res=>res.json())
+    this.clientsecret)
     
     };
   }
-}
+
