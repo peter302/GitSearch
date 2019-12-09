@@ -1,4 +1,6 @@
-
+<h1>Welcome to Git-Search</h1>
+<br>
+<hr>
 <form action="" class="formsearch">
     <div class="form-group">
         <input type="text" class="form-control" placeholder="search here"[(ngModel)]="username"
@@ -73,7 +75,7 @@
           </div>
           <div id="k" class="panel-body" *ngFor="let repo of repos">
             <p
-              style="text-decoration:underline; font-size:20px;"
+              style="text-decoration:underline; font-size:20px; color:orange"
               class="clearfix"
             >
               {{ repo.name }}
