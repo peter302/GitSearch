@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+.list{
+    display:flex;
+    text-align:center;
+    background-color:orange
+}
+body{
+    background-color: aquamarine;
+}
+#style{
+    margin-left:5px ;
+    padding:5px;
+}

@@ -6,8 +6,8 @@ import { SearchedService } from '../git-search/searched.service';
   styleUrls: ['./home-search.component.css']
 })
 export class HomeSearchComponent implements OnInit {
-      profile:any[];
-      repos:any[];
+      profile:any;
+      repos:any;
       username:string;
   constructor(private searchservice:SearchedService) {
  
