@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeSearchComponent } from './home-search/home-search.component';
 import { SearchedService } from './git-search/searched.service';
+import { GitthroughDirective } from './gitthrough.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeSearchComponent
+    HomeSearchComponent,
+    GitthroughDirective
   ],
   imports: [
     BrowserModule,
